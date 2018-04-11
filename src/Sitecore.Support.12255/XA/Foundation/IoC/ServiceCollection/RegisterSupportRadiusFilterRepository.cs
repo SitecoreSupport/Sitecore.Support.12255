@@ -8,7 +8,7 @@
   {
     public void Configure(IServiceCollection serviceCollection)
     {
-      serviceCollection.AddSingleton<IRadiusFilterRepository, Sitecore.Support.XA.Feature.Search.Repositories.RadiusFilterRepository>();
+      serviceCollection.AddTransient<IRadiusFilterRepository, Sitecore.Support.XA.Feature.Search.Repositories.RadiusFilterRepository>();
     }
   }
 }
